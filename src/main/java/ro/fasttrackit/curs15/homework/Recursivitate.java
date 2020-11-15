@@ -16,8 +16,16 @@ public class Recursivitate {
             return 0;
         } else if (num % 2 == 0) {
             return sumEven(num - 2) + num;
-        }else {
+        } else {
             return 0;
+        }
+    }
+
+    public static int sumOfDigits(int num) {
+        if (num == 0) {
+            return 0;
+        } else{
+            return (num % 10 + sumOfDigits(num / 10));
         }
     }
 }

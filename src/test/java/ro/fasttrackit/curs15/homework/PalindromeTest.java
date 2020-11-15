@@ -15,7 +15,7 @@ public class PalindromeTest {
     }
 
     @Test
-    @DisplayName("WHEN")
+    @DisplayName("WHEN recursiveFirstAndLast(level) THEN return level")
     void testPal() {
         //GIVEN
         //WHEN
@@ -25,7 +25,7 @@ public class PalindromeTest {
     }
 
     @Test
-    @DisplayName("WHEN")
+    @DisplayName("WHEN recursiveFirstAndLast(level) THEN return level")
     void testtestPal2() {
         //GIVEN
         //WHEN

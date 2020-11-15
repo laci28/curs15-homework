@@ -93,4 +93,14 @@ public class RecursivitateTest {
         //THEN
         assertThat(received).isEqualTo(0);
     }
+
+    @Test
+    @DisplayName("WHEN sumOfDigits(4516) THEN return 16")
+    void testSumOfDigits() {
+        //GIVEN
+        //WHEN
+        int received = recursivitate.sumOfDigits(4516);
+        //THEN
+        assertThat(received).isEqualTo(16);
+    }
 }
