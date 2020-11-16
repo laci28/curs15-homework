@@ -65,7 +65,7 @@ public class RecursivitateTest {
     }
 
     @Test
-    @DisplayName("WHEN sumEven(2) THEN return 3")
+    @DisplayName("WHEN sumEven(2) THEN return 2")
     void testSumEven2() {
         //GIVEN
         //WHEN
@@ -75,8 +75,18 @@ public class RecursivitateTest {
     }
 
     @Test
-    @DisplayName("WHEN sumEven(10) THEN return 30")
+    @DisplayName("WHEN sumEven(9) THEN return 20")
     void testSumEven10() {
+        //GIVEN
+        //WHEN
+        int received = recursivitate.sumEven(9);
+        //THEN
+        assertThat(received).isEqualTo(20);
+    }
+
+    @Test
+    @DisplayName("WHEN sumEven(10) THEN return 30")
+    void testSumEven9() {
         //GIVEN
         //WHEN
         int received = recursivitate.sumEven(10);
@@ -85,13 +95,13 @@ public class RecursivitateTest {
     }
 
     @Test
-    @DisplayName("WHEN sumEven(11) THEN return 0")
+    @DisplayName("WHEN sumEven(11) THEN return 30")
     void testSumEven11() {
         //GIVEN
         //WHEN
         int received = recursivitate.sumEven(11);
         //THEN
-        assertThat(received).isEqualTo(0);
+        assertThat(received).isEqualTo(30);
     }
 
     @Test

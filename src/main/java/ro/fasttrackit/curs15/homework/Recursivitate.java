@@ -17,7 +17,7 @@ public class Recursivitate {
         } else if (num % 2 == 0) {
             return sumEven(num - 2) + num;
         } else {
-            return 0;
+            return sumEven(num - 1);
         }
     }
 
